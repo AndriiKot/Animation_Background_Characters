@@ -1,20 +1,52 @@
-﻿
+﻿*{
+  box-sizing: border-box
+}
+
+/* Example 1 */
 .text{
   text-align: center
 }
 
+/* Example 2 */
 .wrapper{
   margin-top: 30px;
   text-align: center
 }
 
+/* Example 3 */
 .image{
   display: block;
   margin: 0 auto
 }
 
+/* Example 4 */
 .button {
   position: relative;
   left: 50%;
   transform: translateX(-50%)
 }
+
+/* Example 5 */
+.block{
+  width: 300px;
+  height: 100px;
+  background-color: aqua;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  padding: 30px;
+  border-radius: 8px
+}
+
+.flex{
+  display: flex;
+  justify-content: center
+}
+
+/* Example 6 */
+
+.grid{
+  display: grid;
+  justify-content: center
+}
+
