@@ -1,4 +1,5 @@
-﻿.text{
+﻿
+.text{
   text-align: center
 }
 
@@ -10,4 +11,10 @@
 .image{
   display: block;
   margin: 0 auto
+}
+
+.button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
 }
