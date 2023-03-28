@@ -50,3 +50,28 @@
   justify-content: center
 }
 
+/* Example 7 */
+
+.box{
+  position: relative;
+  background-color: black;
+
+  max-width: 400px;
+  height: 250px
+}
+
+.box .image {
+  display: block;
+  width: 100%;
+  height: 100%
+}
+
+.box .text{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: 0;
+  color: white;
+  font-size: 21px
+}
