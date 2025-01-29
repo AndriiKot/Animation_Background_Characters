@@ -11,7 +11,7 @@ const fontSize = () => 16;
 
 ctx.font = `bold ${fontSize()}px monospace`;
 
-const column = new Column(ctx, fontSize(), 50, 13);
+const column = new Column(ctx, fontSize(), 50, height);
 
 const animation = () => {
   ctx.fillStyle = "black";
