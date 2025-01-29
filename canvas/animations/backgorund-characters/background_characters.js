@@ -7,7 +7,7 @@ const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
 const fontSize = () => 16;
-let y =  0;
+let y = 0;
 
 ctx.font = `bold ${fontSize()}px monospace`;
 ctx.fillStyle = "blue";
