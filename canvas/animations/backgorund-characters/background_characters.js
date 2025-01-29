@@ -1,4 +1,5 @@
 "use strict";
+import { Column } from "./column.js";
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -7,18 +8,20 @@ const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
 const fontSize = () => 16;
-let y = 0;
 
 ctx.font = `bold ${fontSize()}px monospace`;
-ctx.fillStyle = "blue";
 
-ctx.fillText("H", 50, y);
+const column = new Column(ctx, fontSize(), 50, 13);
 
 const animation = () => {
-    requestAnimationFrame( animation );
-    y += 1;
-    ctx.clearRect(0, 0, width, height);
-    ctx.fillText("H", 50, y);
+  ctx.fillStyle = "black";
+  ctx.clearRect(0, 0, width, height);
+
+  ctx.fillStyle = "yellow";
+
+  column.drawSymbol();
+
+  setTimeout(() => requestAnimationFrame(animation), 50);
 };
 
 animation();
