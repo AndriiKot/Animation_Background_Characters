@@ -10,6 +10,9 @@ export class Column {
     this.hightCanvas = hightCanvas;
   }
   drawSymbol() {
+    if (this.y === 0 && Math.random() < 0.99) {
+      return;
+    }
     const charactersIndex = Math.floor(Math.random() * this.letters.length);
     const symbol = this.letters[charactersIndex];
 
