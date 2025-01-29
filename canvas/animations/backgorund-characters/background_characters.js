@@ -9,17 +9,19 @@ const height = (canvas.height = window.innerHeight);
 
 const fontSize = () => 16;
 
+const columns = Array.from({ length: width / fontSize()}, (_, i) => new Column(ctx, fontSize(), fontSize() * i, height))
+
 ctx.font = `bold ${fontSize()}px monospace`;
 
 const column = new Column(ctx, fontSize(), 50, height);
 
 const animation = () => {
-  ctx.fillStyle = "black";
-  ctx.clearRect(0, 0, width, height);
+  ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+  ctx.fillRect(0, 0, width, height);
 
   ctx.fillStyle = "yellow";
 
-  column.drawSymbol();
+  columns.forEach(column => column.drawSymbol());
 
   setTimeout(() => requestAnimationFrame(animation), 50);
 };
