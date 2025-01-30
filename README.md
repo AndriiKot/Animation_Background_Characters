@@ -1,6 +1,6 @@
 # Animation Background Characters
 
-<img src="https://github.com/AndriiKot/Animation_Background_Characters/blob/master/preview/matrix-effect.png" alt="Matrix effect">
+<img src="https://github.com/AndriiKot/Animation_Background_Characters/blob/main/preview/matrix-effect.png" alt="Matrix effect">
 
 ## Description
 
