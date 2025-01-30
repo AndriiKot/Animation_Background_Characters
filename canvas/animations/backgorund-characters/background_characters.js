@@ -22,11 +22,11 @@ const animation = () => {
   ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
   ctx.fillRect(0, 0, width, height);
 
-  ctx.fillStyle = "yellow";
+  ctx.fillStyle = "green";
 
   columns.forEach((column) => column.drawSymbol());
 
-  setTimeout(() => requestAnimationFrame(animation), 50);
+  setTimeout(() => requestAnimationFrame(animation), 55);
 };
 
 animation();
