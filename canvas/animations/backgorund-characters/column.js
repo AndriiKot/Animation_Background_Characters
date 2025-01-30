@@ -26,7 +26,7 @@ export class Column {
       return;
     }
     const charactersIndex = Math.floor(Math.random() * letters.length);
-    const symbol = letters[charactersIndex];
+    const symbol = letters[charactersIndex] || 'A';
 
     this.ctx.fillText(symbol, this.x, this.y);
     if (this.y >= this.hightCanvas) this.y = 0;
