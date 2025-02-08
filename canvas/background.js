@@ -29,4 +29,6 @@ const animation = () => {
   setTimeout(() => requestAnimationFrame(animation), 55);
 };
 
+export default animation;
+
 animation();
